@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #E95420 0%, #772953 100%);
+            background: linear-gradient(135deg, #E95420 0%, #77216F 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -55,7 +55,7 @@
 
         h1 {
             font-size: 2.5em;
-            color: #262626;
+            color: #111111;
             margin-bottom: 20px;
             line-height: 1.3;
             font-weight: 500;
@@ -63,7 +63,7 @@
 
         .date {
             font-size: 1.1em;
-            color: #666666;
+            color: #333333;
             margin-bottom: 30px;
             font-weight: 300;
         }
@@ -88,7 +88,7 @@
 
         .subtitle {
             font-size: 1.1em;
-            color: #666666;
+            color: #333333;
             margin-top: 30px;
             font-style: italic;
             font-weight: 300;
@@ -115,24 +115,7 @@
 </head>
 <body>
     <div class="container">
-        <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="jujuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#E95420;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#772953;stop-opacity:1" />
-                </linearGradient>
-            </defs>
-            <!-- Juju logo circles -->
-            <circle cx="100" cy="60" r="25" fill="url(#jujuGradient)"/>
-            <circle cx="70" cy="110" r="25" fill="url(#jujuGradient)"/>
-            <circle cx="130" cy="110" r="25" fill="url(#jujuGradient)"/>
-            <circle cx="100" cy="140" r="25" fill="url(#jujuGradient)"/>
-            <!-- Connection lines -->
-            <line x1="100" y1="85" x2="88" y2="95" stroke="url(#jujuGradient)" stroke-width="6"/>
-            <line x1="100" y1="85" x2="112" y2="95" stroke="url(#jujuGradient)" stroke-width="6"/>
-            <line x1="76" y1="125" x2="100" y2="135" stroke="url(#jujuGradient)" stroke-width="6"/>
-            <line x1="124" y1="125" x2="100" y2="135" stroke="url(#jujuGradient)" stroke-width="6"/>
-        </svg>
+        <img class="logo" src="https://avatars.githubusercontent.com/u/4604548?s=200&v=4" alt="Juju Logo">
         <h1>Is Juju 4 Released Yet?</h1>
         <div class="date" id="currentDate"></div>
         <div class="answer">No</div>
