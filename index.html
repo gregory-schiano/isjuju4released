@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is Juju 4 Released Yet?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,8 +15,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #E95420 0%, #772953 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,14 +25,21 @@
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
+            background: #ffffff;
+            border-radius: 8px;
             padding: 60px 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
             text-align: center;
             max-width: 600px;
             width: 100%;
             animation: fadeIn 0.5s ease-in;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            display: block;
         }
 
         @keyframes fadeIn {
@@ -45,24 +55,25 @@
 
         h1 {
             font-size: 2.5em;
-            color: #333;
-            margin-bottom: 30px;
+            color: #000000;
+            margin-bottom: 20px;
             line-height: 1.3;
+            font-weight: 500;
         }
 
         .date {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #000000;
+            margin-bottom: 30px;
             font-weight: 300;
         }
 
         .answer {
             font-size: 6em;
-            font-weight: bold;
-            color: #e74c3c;
+            font-weight: 700;
+            color: #E95420;
             margin: 40px 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-shadow: none;
             animation: pulse 2s ease-in-out infinite;
         }
 
@@ -77,9 +88,10 @@
 
         .subtitle {
             font-size: 1.1em;
-            color: #777;
+            color: #000000;
             margin-top: 30px;
             font-style: italic;
+            font-weight: 300;
         }
 
         @media (max-width: 600px) {
@@ -103,6 +115,7 @@
 </head>
 <body>
     <div class="container">
+        <img class="logo" src="https://avatars.githubusercontent.com/u/4604548?s=200&v=4" alt="Juju Logo">
         <h1>Is Juju 4 Released Yet?</h1>
         <div class="date" id="currentDate"></div>
         <div class="answer">No</div>
